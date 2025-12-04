@@ -12,7 +12,6 @@
 
 backend/data
 backend/venv
-backend/spotifyDashboard.ipynb
 
 # testing
 /coverage
