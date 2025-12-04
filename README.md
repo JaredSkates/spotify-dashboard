@@ -1,8 +1,10 @@
-# Run dev server
+# Running The Development Server
 - npm run dev
 
-# Using Python Env
+# Running The API Server
+## Using Python Env
+- cd backend
 - source venv/bin/activate
 
-# Uvicorn & Fast API
+## Uvicorn & Fast API
 - uvicorn main:app --reload
