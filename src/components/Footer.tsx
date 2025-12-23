@@ -13,7 +13,7 @@ export default function Footer() {
     const [selectedArtist, setSelectedArtist] = useState('');
     const [currentSongs, setCurrentSongs] = useState<string[]>([]);
 
-    // Use to run a function once
+
     useEffect(() => {
         async function load() {
             const result = await fetch("http://localhost:8000/listening-hours")
@@ -63,8 +63,6 @@ export default function Footer() {
         }
 
     }
-
-
 
     return(
         <main className='w-full h-[45vh] flex-col md:flex-row flex justify-evenly p-5'>

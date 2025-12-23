@@ -51,7 +51,7 @@ export default function Main() {
                     track_name: data.track_name[key],
                 })).slice(0,5);
 
-                // Convert to an array
+     
                 console.log(data);
                 console.log(grouped);
 
@@ -82,7 +82,7 @@ export default function Main() {
                 <div className="flex flex-col gap-2">
                     {topTracks.map((artist) => {
                         return(
-                            <div>
+                            <div key={artist.artist}>
                                 <h1 className="text-xl font-thin">{artist.track_name}</h1>
                                 <span className="text-sm">{artist.artist}</span>
                             </div>
