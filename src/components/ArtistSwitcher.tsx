@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { ChevronDownIcon } from "@heroicons/react/24/outline"; // Arrow Icon
+import { ChevronDownIcon } from "@heroicons/react/24/outline"; 
 
 type Prop = {
   artists: string[];
@@ -17,12 +17,11 @@ export default function ArtistSwitcher({ artists, currentArtist, onSelect }: Pro
   };
 
   return (
-    <div className="relative mb-6 z-50"> {/* High z-index so menu floats over everything */}
+    <div className="relative mb-6 z-50"> 
       <div 
         onClick={() => setIsOpen(!isOpen)} 
         className="cursor-pointer group select-none flex items-center gap-4"
       >
-
         <h1 className="text-xl md:text-2xl font-bold text-[#EAD7C1] group-hover:text-white transition-colors">
           {currentArtist}
         </h1>
@@ -38,7 +37,6 @@ export default function ArtistSwitcher({ artists, currentArtist, onSelect }: Pro
 
       </div>
 
-      {/* 2. THE DROPDOWN MENU */}
       {isOpen && (
         <div className="absolute top-16 left-0 w-64 bg-[#2A1F1D] border border-[#5C4D44] rounded-lg shadow-2xl max-h-80 overflow-y-auto custom-scrollbar">
           {artists.map((artistName) => (

@@ -67,8 +67,8 @@ export default function Footer() {
 
 
     return(
-        <main className='w-full h-[50%] flex justify-evenly p-4'>
-            <div className='flex flex-col items-center w-full'>
+        <main className='w-full h-[45vh] flex-col md:flex-row flex justify-evenly p-5'>
+            <div className='flex flex-col items-center w-full p-4'>
                 {selectedArtist && (
                     <>
                         <ArtistSwitcher 

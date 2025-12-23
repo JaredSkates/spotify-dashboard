@@ -23,4 +23,5 @@ body {
   background: var(--background);
   color: #E8C6A8;
   font-family: var(--font-outfit), sans-serif;
+  box-sizing: border-box;
 }
