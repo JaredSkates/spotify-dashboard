@@ -38,3 +38,8 @@ async def getListeningHours():
 async def getSpotifyData():
     with open("./data/grouped.json") as file:
         return json.load(file)
+    
+@app.get("/top-song-artist")
+async def getTopSongsByArtist() :
+    with open("./data/top_artist_tracks.json") as file:
+        return json.load(file)
